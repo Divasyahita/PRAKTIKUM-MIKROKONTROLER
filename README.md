@@ -17,49 +17,46 @@ Pertanyaan Praktikum:
    Memberikan jeda waktu (delay) dalam satuan milidetik dan Mengatur kecepatan kedipan LED
    Semakin besar nilai delay → LED berkedip lebih lambat, Semakin kecil nilai delay → LED berkedip lebih cepat.
 4. Jika program yang dibuat memiliki alur mati → lambat → cepat → reset (mati), ubah menjadi LED tidak langsung reset → tetapi berubah dari cepat → sedang → mati dan berikan penjelasan disetiap baris kode nya dalam bentuk README.md!
+   const int ledPin = 6;      // Menentukan pin LED pada pin 6
+   int timeDelay = 1000;      // Nilai awal delay (kedip lambat)
+   bool faseTurun = true;     // Penanda arah perubahan (cepat atau lambat kembali)
+   void setup() {
+    pinMode(ledPin, OUTPUT); // Mengatur pin LED sebagai output
+   }
+   void loop() {
+   // Menyalakan LED
+   digitalWrite(ledPin, HIGH);
+   delay(timeDelay);
 
-const int ledPin = 6;      // Menentukan pin LED pada pin 6
-int timeDelay = 1000;      // Nilai awal delay (kedip lambat)
-bool faseTurun = true;     // Penanda arah perubahan (cepat atau lambat kembali)
+   // Mematikan LED
+   digitalWrite(ledPin, LOW);
+   delay(timeDelay);
 
-void setup() {
-  pinMode(ledPin, OUTPUT); // Mengatur pin LED sebagai output
-}
-
-void loop() {
-  // Menyalakan LED
-  digitalWrite(ledPin, HIGH);
-  delay(timeDelay);
-
-  // Mematikan LED
-  digitalWrite(ledPin, LOW);
-  delay(timeDelay);
-
-  // Logika percabangan untuk perubahan delay
-  if (faseTurun) {
+   // Logika percabangan untuk perubahan delay
+   if (faseTurun) {
     timeDelay -= 100;  // Mempercepat kedipan
 
-    // Jika sudah terlalu cepat
+   // Jika sudah terlalu cepat
     if (timeDelay <= 100) {
       faseTurun = false; // Ubah arah menjadi melambat
-    }
-  } else {
-    timeDelay += 100;  // Memperlambat kembali
+     }
+    } else {
+     timeDelay += 100;  // Memperlambat kembali
 
-    // Jika sudah kembali lambat
+   // Jika sudah kembali lambat
     if (timeDelay >= 1000) {
       delay(2000);      // Jeda sebelum mati
       timeDelay = 1000; // Reset ke awal
       faseTurun = true; // Ulangi siklus
+     }
     }
-  }
-}
+   }
 
 Percobaan 2A: Perulangan
 
 Pertanyaan Praktikum:
 1.Gambarkan rangkaian schematic 5 LED running yang digunakan pada percobaan!
-![Uploading image.png…]()
+<img width="951" height="656" alt="Screenshot 2026-04-05 000209" src="https://github.com/user-attachments/assets/3a596c11-a3e1-4c52-bab4-f3acb03c9531" />
 2. Jelaskan bagaimana program membuat efek LED berjalan dari kiri ke kanan!
    Efek LED berjalan dari kiri ke kanan dibuat menggunakan perulangan for dengan nilai pin yang naik (increment):
    for (int ledPin = 2; ledPin < 8; ledPin++) {
