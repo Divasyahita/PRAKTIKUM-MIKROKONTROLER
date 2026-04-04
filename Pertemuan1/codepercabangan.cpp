@@ -1,4 +1,4 @@
-const int ledPin = 5; 
+const int ledPin = 6; 
 int timeDelay = 1000; 
 
 void setup() { 
