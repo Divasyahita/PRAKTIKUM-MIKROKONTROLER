@@ -17,6 +17,7 @@ Pertanyaan Praktikum:
    Memberikan jeda waktu (delay) dalam satuan milidetik dan Mengatur kecepatan kedipan LED
    Semakin besar nilai delay → LED berkedip lebih lambat, Semakin kecil nilai delay → LED berkedip lebih cepat.
 4. Jika program yang dibuat memiliki alur mati → lambat → cepat → reset (mati), ubah menjadi LED tidak langsung reset → tetapi berubah dari cepat → sedang → mati dan berikan penjelasan disetiap baris kode nya dalam bentuk README.md!
+
 const int ledPin = 6;      // Menentukan pin LED pada pin 6
 int timeDelay = 1000;      // Nilai awal delay (kedip lambat)
 bool faseTurun = true;     // Penanda arah perubahan (cepat atau lambat kembali)
