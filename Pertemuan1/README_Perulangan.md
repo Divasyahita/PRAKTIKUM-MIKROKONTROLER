@@ -11,7 +11,7 @@
 * LED 5 → Pin 6 Arduino
 * Setiap LED diseri dengan resistor 220Ω
 * Kaki negatif LED → GND
----
+
 Rangkaian ini memungkinkan setiap LED dikontrol secara individu melalui pin digital Arduino.
 
 ---
