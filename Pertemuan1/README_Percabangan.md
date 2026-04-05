@@ -25,8 +25,7 @@ timeDelay > 100
 
 Pada kondisi ini:
 
-* Nilai `timeDelay` dikurangi 100
-* LED akan berkedip semakin cepat secara bertahap
+Nilai `timeDelay` dikurangi 100 dan LED akan berkedip semakin cepat secara bertahap
 
 ---
 
@@ -34,8 +33,7 @@ Pada kondisi ini:
 
 Fungsi `delay(timeDelay)` digunakan untuk:
 
-* Memberikan jeda waktu dalam milidetik
-* Mengatur kecepatan kedipan LED
+Memberikan jeda waktu dalam milidetik dan Mengatur kecepatan kedipan LED
 
 Keterangan:
 
