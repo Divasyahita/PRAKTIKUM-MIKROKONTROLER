@@ -6,19 +6,16 @@ void setup() {
 } 
 
 void loop() { 
-  // Nyalakan LED 
   digitalWrite(ledPin, HIGH); 
   delay(timeDelay); 
   
-  // Matikan LED 
   digitalWrite(ledPin, LOW); 
   delay(timeDelay); 
 
-  // Ubah delay setelah 1 siklus kedip
   if (timeDelay <= 100) { 
-    delay(3000);        // jeda sebelum reset
-    timeDelay = 1000;   // reset ke awal
+    delay(3000);       
+    timeDelay = 1000;   
   } else { 
-    timeDelay -= 100;   // percepatan bertahap
+    timeDelay -= 100;   
   }
 }
