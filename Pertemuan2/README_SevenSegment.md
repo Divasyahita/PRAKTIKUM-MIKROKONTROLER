@@ -63,10 +63,8 @@ Program ini menggunakan **Common Cathode**.
 ### 🔧 Source Code
 
 ```cpp
-// ini Pin mapping segment (a b c d e f g dp)
 const int segmentPins[8] = {7, 6, 5, 11, 10, 8, 9, 4};
 
-// nah kalo ini pola segment 0 - F
 byte digitPattern[16][8] = {
   {1,1,1,1,1,1,0,0}, // 0
   {0,1,1,0,0,0,0,0}, // 1
