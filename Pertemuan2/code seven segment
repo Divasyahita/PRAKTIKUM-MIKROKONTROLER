@@ -1,9 +1,6 @@
 #include <Arduino.h>
 
-// 7-Segment Display (Efficient Version)
-// Menampilkan 0 - F (Hexadecimal)
-
-// Pin mapping segment (a b c d e f g dp)
+// ini adalah pin mapping segment (a b c d e f g dp)
 const int segmentPins[8] = {7, 6, 5, 11, 18, 8, 9, 4};
 
 // Segment pattern untuk 0 - F
@@ -27,7 +24,7 @@ byte digitPattern[16][8] = {
   {1,0,0,0,1,1,1,0}  // F
 };
 
-// Fungsi menampilkan digit
+// ini fungsinya untuk menampilkan digit
 void displayDigit(int num) {
   for (int i = 0; i < 8; i++) {
     digitalWrite(segmentPins[i], digitPattern[num][i]);
