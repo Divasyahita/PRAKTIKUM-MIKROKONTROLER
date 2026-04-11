@@ -30,6 +30,8 @@ Setiap pin Arduino dihubungkan ke segmen melalui resistor.
 
 <img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/df541bea-5f47-4859-8e71-65022b94d7cb" />
 
+Link Tinkercad ada di sini: https://www.tinkercad.com/things/2q25b1muDNm-7-segment?sharecode=g8NBX6xbc9Rpr08CtsQk5heRI3KUAsX-ZUdGYA7hOpo
+
 ---
 
 ## 2. Apa yang terjadi jika nilai `num lebih dari 15`?
