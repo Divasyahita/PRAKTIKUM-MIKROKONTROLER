@@ -31,6 +31,9 @@ Rangkaian terdiri dari:
 - Button 2 (modifikasi) → Pin 3  
 - Koneksi ke GND (menggunakan INPUT_PULLUP)
 
+<img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/f4d83e7a-bfb9-419b-9bc2-e513235b5820" />
+<img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/f4d83e7a-bfb9-419b-9bc2-e513235b5820" />
+
 ---
 
 ## 2. Mengapa menggunakan INPUT_PULLUP?
