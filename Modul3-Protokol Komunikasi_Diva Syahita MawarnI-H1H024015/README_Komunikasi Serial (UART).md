@@ -16,6 +16,12 @@ Proses yang terjadi adalah sebagai berikut:
    - HIGH → LED menyala  
    - LOW → LED mati  
 
+Gambar Rangkaian Tinkercad
+<img width="793" height="562" alt="image" src="https://github.com/user-attachments/assets/0f1c5d3f-80cc-45a3-90fc-80ee9af44fc3" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-04-14 at 09 27 11" src="https://github.com/user-attachments/assets/e59545c1-5ce8-43e7-8587-18796d520c02" />
+
+Link Tinkercad : 
+
 ---
 
 ## 2. Mengapa digunakan Serial.available() sebelum membaca data? Apa yang terjadi jika baris tersebut dihilangkan?
