@@ -18,9 +18,10 @@ Proses yang terjadi adalah sebagai berikut:
 
 Gambar Rangkaian Tinkercad
 <img width="793" height="562" alt="image" src="https://github.com/user-attachments/assets/0f1c5d3f-80cc-45a3-90fc-80ee9af44fc3" />
-<img width="1600" height="900" alt="WhatsApp Image 2026-04-14 at 09 27 11" src="https://github.com/user-attachments/assets/e59545c1-5ce8-43e7-8587-18796d520c02" />
+<img width="793" height="562" alt="WhatsApp Image 2026-04-14 at 09 27 11" src="https://github.com/user-attachments/assets/e59545c1-5ce8-43e7-8587-18796d520c02" />
 
-Link Tinkercad : 
+
+Link Tinkercad : https://www.tinkercad.com/things/0FkEHcdi3NA-modul-3-praktikum-sismik?sharecode=MlJSKxaL2hCwFRMVfXawMzO-SujGVEcE5-GCEDpsMuQ
 
 ---
 
@@ -80,6 +81,8 @@ void loop() {
   }
 }
 ```
+Link Tinkercad : https://www.tinkercad.com/things/0FkEHcdi3NA-modul-3-praktikum-sismik?sharecode=MlJSKxaL2hCwFRMVfXawMzO-SujGVEcE5-GCEDpsMuQ
+
 ---
 ## 4. Pemilihan `delay()` atau `millis()`
 
