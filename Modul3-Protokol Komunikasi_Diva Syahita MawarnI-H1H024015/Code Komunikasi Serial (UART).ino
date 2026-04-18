@@ -10,7 +10,7 @@ void setup() {
 
 void loop() {
   if (Serial.available() > 0) {
-    char data = Serial.read(); // Baca 1 karakter dari serial
+    char data = Serial.read(); 
 
     if (data == '1') {
       digitalWrite(PIN_LED, HIGH);
@@ -21,7 +21,6 @@ void loop() {
       Serial.println("LED OFF");
     } 
     else if (data != '\n' && data != '\r') {
-      // Jika bukan 1, 0, atau ENTER
       Serial.println("Perintah tidak dikenal");
     }
   }
