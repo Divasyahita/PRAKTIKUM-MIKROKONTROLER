@@ -1,14 +1,14 @@
-#include <Arduino.h> // library dasar Arduino (tidak wajib diubah)
+#include <Arduino.h> 
 
 // PIN SETUP
-// Tentukan pin yang digunakan untuk potensiometer dan LED PWM
-const int potPin = A0 ;   // isi dengan pin analog (contoh A0)
-const int ledPin = 9 ;   // isi dengan pin digital PWM (contoh 9)
+// pin yang digunakan untuk potensiometer dan LED PWM
+const int potPin = A0 ;   
+const int ledPin = 9 ;  
 
 //VARIABEL
 //Variabel untuk menyimpan hasil pembacaan dan konversi PWM
-int nilaiADC = 0;  // isi dengan nilai awal (default 0)
-int pwm = 0;       // isi dengan nilai awal (default 0)
+int nilaiADC = 0;  
+int pwm = 0;     
 
 void setup() {
 
@@ -18,34 +18,34 @@ void setup() {
 
   //SERIAL MONITOR
   // Aktifkan komunikasi serial untuk melihat data pembacaan
-  Serial.begin(115200); // isi baud rate (contoh 9600)
+  Serial.begin(115200);
 }
 
 void loop() {
 
   // PEMBACAAN SENSOR
   // Baca nilai analog dari potensiometer (rentang 0–1023)
-  nilaiADC = analogRead(potPin); // isi dengan potPin
+  nilaiADC = analogRead(potPin); 
 
   // PEMROSESAN DATA (SCALING)
   // Ubah nilai ADC (0–1023) menjadi nilai PWM (0–255)
   pwm = map(nilaiADC,0
-           ,1023  // isi nilai minimum ADC
-            , 0  // isi nilai maksimum ADC
-            ,  180 // isi PWM minimum
-            );  // isi PWM maksimum
+           ,1023  // nilai minimum ADC
+            , 0  // nilai maksimum ADC
+            ,  180 // PWM minimum
+            );  // PWM maksimum
 
   // OUTPUT PWM
   // Kirim sinyal PWM ke LED (mengatur kecerahan)
-  analogWrite(ledPin,pwm ); // isi dengan variabel PWM
+  analogWrite(ledPin,pwm );
 
   // MONITORING DATA
-  // Tampilkan data ADC dan PWM ke Serial Monitor
+  // menampilkan data ADC dan PWM ke Serial Monitor
   Serial.print("ADC: ");
-  Serial.print(nilaiADC); // isi variabel ADC
+  Serial.print(nilaiADC); 
 
   Serial.print(" | PWM: ");
-  Serial.println(pwm); // isi variabel PWM
+  Serial.println(pwm); 
 
   // STABILISASI SISTEM 
   // Delay untuk menstabilkan pembacaan dan tampilan data
