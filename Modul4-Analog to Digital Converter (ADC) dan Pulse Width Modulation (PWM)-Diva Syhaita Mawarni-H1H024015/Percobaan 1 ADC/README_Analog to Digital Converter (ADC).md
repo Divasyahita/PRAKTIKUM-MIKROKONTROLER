@@ -51,7 +51,7 @@ void loop() {
 
 ```
 
-### Penjelasan program
+##### Penjelasan program
 
 `analogRead(potPin)` digunakan untuk membaca nilai dari potensiometer dalam rentang **0–1023**.
 
