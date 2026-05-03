@@ -1,3 +1,11 @@
+## Percobaan 1 Analog to Digital Converter (ADC)
+1. Persiapan bahan
+2. Membuat rangkaian yang menghubungkan Arduino
+   <img width="1600" height="900" alt="WhatsApp Image 2026-04-28 at 09 58 55" src="https://github.com/user-attachments/assets/2d9ab675-8dcc-40c4-bfb4-fa6c658924a6" />
+
+
+## Pertanyaan Praktikum
+
 #### 1. Jelaskan mengapa LED dapat diatur kecerahannya menggunakan fungsi `analogWrite()`!
 
 LED dapat diatur kecerahannya menggunakan fungsi `analogWrite()` karena fungsi ini menghasilkan sinyal PWM (Pulse Width Modulation). PWM bekerja dengan cara mengatur lebar pulsa (duty cycle) dari sinyal digital:
@@ -52,7 +60,7 @@ void loop() {
   delay(10);
 }
 ```
-### Penjelasan Program
+##### Penjelasan Program
 
 `analogRead(potPin)` membaca nilai dari potensiometer dalam rentang **0–1023**
 
