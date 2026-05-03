@@ -1,3 +1,11 @@
+## Percobaan 1 Analog to Digital Converter (ADC)
+1. Persiapan bahan
+2. Membuat rangkaian yang menghubungkan Arduino
+    <img width="1600" height="900" alt="WhatsApp Image 2026-04-28 at 09 35 09" src="https://github.com/user-attachments/assets/92a87eaa-c72e-45b1-ab62-2300db3015fa" />
+
+
+## Pertanyaan Praktikum
+
 #### 1. Apa fungsi perintah `analogRead()` pada rangkaian praktikum ini?
 
 Perintah `analogRead()` digunakan untuk membaca nilai tegangan analog dari pin input (misalnya dari potensiometer). Nilai yang dibaca akan dikonversi oleh ADC (Analog to Digital Converter) menjadi data digital dengan rentang 0–1023.
