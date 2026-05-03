@@ -14,6 +14,8 @@ Contoh:
 ```cpp
 int sudut = map(nilaiADC, 0, 1023, 0, 180);
 
+```
+
 ---
 
 #### 3. Modifikasi program berikut agar servo hanya bergerak dalam rentang 30° hingga 150°, meskipun potensiometer tetap memiliki rentang ADC 0–1023.
@@ -38,3 +40,17 @@ void loop() {
   myServo.write(sudut);
   delay(15);
 }
+
+```
+
+### Penjelasan program
+
+`analogRead(potPin)` digunakan untuk membaca nilai dari potensiometer dalam rentang **0–1023**.
+
+Fungsi `map()` digunakan untuk mengubah nilai tersebut ke rentang **30–150 derajat**, sehingga:
+  - Servo tidak akan bergerak penuh (**0–180°**)
+  - Pergerakan menjadi lebih terbatas dan terkontrol
+
+`myServo.write(sudut)` berfungsi untuk mengatur posisi servo sesuai dengan nilai sudut hasil mapping. 
+
+`delay(15)` digunakan untuk memberikan jeda agar pergerakan servo terlihat lebih halus dan tidak terlalu cepat.
