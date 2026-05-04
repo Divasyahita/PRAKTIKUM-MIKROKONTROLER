@@ -3,6 +3,8 @@
 2. Membuat rangkaian yang menghubungkan Arduino
    <img width="1600" height="900" alt="WhatsApp Image 2026-04-28 at 09 58 55" src="https://github.com/user-attachments/assets/2d9ab675-8dcc-40c4-bfb4-fa6c658924a6" />
 
+   
+   <img width="1600" height="900" alt="video percobaan 2" src="https://github.com/user-attachments/assets/f6b59aa1-ff27-4283-9379-5097f7c86c6b" />
 
 ## Pertanyaan Praktikum
 
